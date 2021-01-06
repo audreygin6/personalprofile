@@ -1,0 +1,21 @@
+/* style the homepage of google */
+.google{
+  font-size: 80px;
+  padding-left: 515px;
+  padding-top: 150px;
+}
+.g{
+  color: #4885ed;
+}
+.red{
+  color: #db3236;
+}
+#yellow_o{
+  color: #f4c20d;
+}
+#l{
+  color: #3cba54;
+}
+h1{
+  color: green;
+}

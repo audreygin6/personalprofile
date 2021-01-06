@@ -1,0 +1,36 @@
+body{
+  background-color: #f3e6ff;
+}
+form{
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngkit.com%2Fview%2Fu2a9o0u2a9u2q8r5_background-blue-purple-pink-watercolor-aesthetic-icon-paint%2F&psig=AOvVaw0Xt8sQ-ECnEFydTBt2G2s2&ust=1604621229697000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPjozomO6uwCFQAAAAAdAAAAABAL");
+  background-repeat: no-repeat;
+  padding: 50px;
+  margin: 50px;
+}
+h1 {
+  padding-left: 620px;
+  font-family: Georgia;
+  font-size: 40px;
+}
+h2 {
+  padding-left: 500px;
+  font-family: Georgia;
+  font-size: 40px;
+}
+h3 {
+  padding-left: 250px;
+  padding-right: 250px;
+  font-size: 20px;
+}
+img{
+  padding-left: 650px;
+}
+.nav{
+  font-size: 24pt;
+}
+.home, .hobbies{
+  padding: 25px;
+}
+a{
+  color: #000000;
+}

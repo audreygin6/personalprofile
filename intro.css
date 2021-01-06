@@ -1,0 +1,34 @@
+h1 {
+  padding-left: 600px;
+  font-family: Georgia;
+  font-size: 40px;
+}
+
+a{
+  padding-left: 695px;
+  font-family: monospace;
+  font-size: 15px;
+  color: #0000cc;
+}
+
+ul{
+  padding-left: 705px;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+p1{
+  padding-left: 565px;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+img{
+  padding-left: 560px;
+  height: 400px;
+  width: auto;
+}
+
+body{
+  background-color: #cce6ff;
+}

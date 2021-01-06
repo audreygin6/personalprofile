@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+  <head>
+    <title> Audrey Gin's Profile </title>
+    <link href="personalprofile.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="nav">
+    <a class="Home" href="personalprofile.html"> Home </a>
+    <a class="Hobbies" href="hobbies.html"> Hobbies </a>
+    <a class="Quiz" href="quiz.html"> Quiz </a>
+    </div>
+    <h2> How well do you know me? </h2>
+    <form>
+      <ol>
+        <li>
+          <label> When is my birthday? </label> <br>
+            <input type = "date"> </input>
+        </li>
+        <br>
+        <li>
+          <label> What is my favorite food? </label> <br>
+          <input type = "radio" name = "food"> Pizza </input> <br>
+          <input type = "radio" name = "food"> Japanese </input> <br>
+          <input type = "radio" name = "food"> Korean BBQ </input> <br>
+          <input type = "radio" name = "food"> Cheeseburgers </input> <br>
+        </li>
+        <br>
+        <li>
+          <label> What extracurricular activities am I doing this year? </label> <br>
+          <input type = "checkbox" name = "activity"> Speech and Debate </input> <br>
+          <input type = "checkbox" name = "activity"> Girls Who Code </input> <br>
+          <input type = "checkbox" name = "activity"> Robotics </input> <br>
+          <input type = "checkbox" name = "activity"> Volleyball </input> <br>
+          <input type = "checkbox" name = "activity"> Interact Club </input> <br>
+        </li>
+        <br>
+        <li>
+          <label> How old am I today? </label> <br>
+          <input type = "number"> </input>
+        </li>
+        <br>
+        <li>
+          <label> What is my favorite TV show? </label> <br>
+          <input type = "radio" name = "show"> Stranger Things </input> <br>
+          <input type = "radio" name = "show"> The Office </input> <br>
+          <input type = "radio" name = "show"> Modern Family </input> <br>
+          <input type = "radio" name = "show"> Friends </input> <br>
+        </li>
+        <br>
+        <li>
+          <label> What is my favorite genre of music to listen to? </label> <br>
+          <input type = "radio" name = "music"> Pop </input> <br>
+          <input type = "radio" name = "music"> Modern Rock </input> <br>
+          <input type = "radio" name = "music"> Rap </input> <br>
+          <input type = "radio" name = "music"> Alternative </input> <br>
+        </li>
+        <br>
+        <li>
+          <label> Where do I want to go on vacation next? </label> <br>
+          <input type = "radio" name = "vacation"> Fiji </input> <br>
+          <input type = "radio" name = "vacation"> Disneyland/Disney World/Universal Studios </input> <br>
+          <input type = "radio" name = "vacation"> Japan </input> <br>
+          <input type = "radio" name = "vacation"> Cancun </input> <br>
+        </li>
+        <br>
+        <li>
+          <label> What is my favorite video game?? </label> <br>
+          <input type = "radio" name = "game"> Uncharted </input> <br>
+          <input type = "radio" name = "game"> The Last of Us </input> <br>
+          <input type = "radio" name = "game"> Bioshock Infinite </input> <br>
+          <input type = "radio" name = "game"> Ghost of Tsushima </input> <br>
+        </li>
+        <br>
+        <button> Sumbit </button>
+
+      </ol>
+    </form>
+
+      <script>
+        var food = document.getElementById("sushi");
+        function rightOrWrong(){
+          if (food.value = "sushi"){
+            document.write("You got my favorite food right!");
+          }
+          else{
+            document.write("You got my favorite food wrong!");
+        }
+      }
+    </script>
+  </body>
+</html>
