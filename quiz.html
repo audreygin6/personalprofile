@@ -17,14 +17,18 @@
             <input type = "date"> </input>
         </li>
         <br>
-        <li>
+        <div id = "answer1"> Right or Wrong: </div>
+
+        <li class="favfood"
           <label> What is my favorite food? </label> <br>
-          <input type = "radio" name = "food"> Pizza </input> <br>
-          <input type = "radio" name = "food"> Japanese </input> <br>
-          <input type = "radio" name = "food"> Korean BBQ </input> <br>
-          <input type = "radio" name = "food"> Cheeseburgers </input> <br>
+          <input type = "radio" name = "food" id = "pizza"> Pizza </input> <br>
+          <input type = "radio" name = "food" id = "japanese"> Japanese </input> <br>
+          <input type = "radio" name = "food" id = "koreanbbq"> Korean BBQ </input> <br>
+          <input type = "radio" name = "food" id = "cheeseburgers"> Cheeseburgers </input> <br>
         </li>
         <br>
+        <div id = "answer2"> Right or Wrong: </div>
+
         <li>
           <label> What extracurricular activities am I doing this year? </label> <br>
           <input type = "checkbox" name = "activity"> Speech and Debate </input> <br>
@@ -34,56 +38,110 @@
           <input type = "checkbox" name = "activity"> Interact Club </input> <br>
         </li>
         <br>
+        <div id = "answer3"> Right or Wrong: </div>
+
         <li>
           <label> How old am I today? </label> <br>
-          <input type = "number"> </input>
+          <input type = "number" id = "age"> </input>
         </li>
         <br>
+        <div id = "answer4"> Right or Wrong: </div>
+
         <li>
           <label> What is my favorite TV show? </label> <br>
-          <input type = "radio" name = "show"> Stranger Things </input> <br>
-          <input type = "radio" name = "show"> The Office </input> <br>
-          <input type = "radio" name = "show"> Modern Family </input> <br>
-          <input type = "radio" name = "show"> Friends </input> <br>
+          <input type = "radio" name = "show" id = "strangerthings"> Stranger Things </input> <br>
+          <input type = "radio" name = "show" id = "theoffice"> The Office </input> <br>
+          <input type = "radio" name = "show" id = "modernfamily"> Modern Family </input> <br>
+          <input type = "radio" name = "show" id = "friends"> Friends </input> <br>
         </li>
         <br>
+        <div id = "answer5"> Right or Wrong: </div>
+
         <li>
           <label> What is my favorite genre of music to listen to? </label> <br>
-          <input type = "radio" name = "music"> Pop </input> <br>
-          <input type = "radio" name = "music"> Modern Rock </input> <br>
-          <input type = "radio" name = "music"> Rap </input> <br>
-          <input type = "radio" name = "music"> Alternative </input> <br>
+          <input type = "radio" name = "music" id = "pop"> Pop </input> <br>
+          <input type = "radio" name = "music" id = "modernrock"> Modern Rock </input> <br>
+          <input type = "radio" name = "music" id = "rap"> Rap </input> <br>
+          <input type = "radio" name = "music" id = "alternatve"> Alternative </input> <br>
         </li>
         <br>
+        <div id = "answer6"> Right or Wrong: </div>
+
         <li>
-          <label> Where do I want to go on vacation next? </label> <br>
-          <input type = "radio" name = "vacation"> Fiji </input> <br>
-          <input type = "radio" name = "vacation"> Disneyland/Disney World/Universal Studios </input> <br>
-          <input type = "radio" name = "vacation"> Japan </input> <br>
-          <input type = "radio" name = "vacation"> Cancun </input> <br>
+          <label> Where do I want to travel to next? </label> <br>
+          <input type = "radio" name = "vacation" id = "fiji"> Fiji </input> <br>
+          <input type = "radio" name = "vacation" id = "disneyworld"> Disney World </input> <br>
+          <input type = "radio" name = "vacation" id = "japan"> Japan </input> <br>
+          <input type = "radio" name = "vacation" id = "cancun"> Cancun </input> <br>
         </li>
         <br>
+        <div id = "answer7"> Right or Wrong: </div>
+
         <li>
           <label> What is my favorite video game?? </label> <br>
-          <input type = "radio" name = "game"> Uncharted </input> <br>
-          <input type = "radio" name = "game"> The Last of Us </input> <br>
-          <input type = "radio" name = "game"> Bioshock Infinite </input> <br>
-          <input type = "radio" name = "game"> Ghost of Tsushima </input> <br>
+          <input type = "radio" name = "game" id = "uncharted"> Uncharted </input> <br>
+          <input type = "radio" name = "game" id = "thelastofuspart2"> The Last of Us Part 2 </input> <br>
+          <input type = "radio" name = "game" id = "bioshockinfinite"> Bioshock Infinite </input> <br>
+          <input type = "radio" name = "game" id = "ghostoftsushima"> Ghost of Tsushima </input> <br>
         </li>
         <br>
-        <button> Sumbit </button>
+        <div id = "answer8"> Right or Wrong: </div>
+        <button type = "button" onclick = "rightOrWrong()"> Submit </button>
 
       </ol>
     </form>
 
-      <script>
-        var food = document.getElementById("sushi");
-        function rightOrWrong(){
-          if (food.value = "sushi"){
-            document.write("You got my favorite food right!");
-          }
-          else{
-            document.write("You got my favorite food wrong!");
+    <script>
+      var food = document.getElementById("japanese");
+      var age = document.getElementById("age");
+      var show = document.getElementById("friends");
+      var music = document.getElementById("pop")
+      var game = document.getElementById("thelastofuspart2")
+      var vacation = document.getElementById("japan")
+      var answer2 = document.getElementById("answer2");
+      var answer4 = document.getElementById("answer4");
+      var answer5 = document.getElementById("answer5");
+      var answer6 = document.getElementById("answer6");
+      var answer7 = document.getElementById("answer7");
+      var answer8 = document.getElementById("answer8");
+
+      function rightOrWrong(){
+        if (food.checked){
+          answer2.innerHTML="You got my favorite food right!";
+        }
+        else {
+          answer2.innerHTML="You got my favorite food wrong!";
+        }
+
+        if (age.value == 14){
+          answer4.innerHTML = "You got my age right!";
+        }
+        else {
+          answer4.innerHTML = "You got my age wrong!";
+        }
+        if (show.checked){
+          answer5.innerHTML="You got my favorite show right!";
+        }
+        else {
+          answer5.innerHTML="You got my favorite show wrong!";
+        }
+        if (music.checked){
+          answer6.innerHTML="You got my favorite music genre right!";
+        }
+        else {
+          answer6.innerHTML="You got my favorite music genre wrong!";
+        }
+        if (vacation.checked){
+          answer7.innerHTML="You got the place where I want to travel to next right!";
+        }
+        else {
+          answer7.innerHTML="You got the place where I want to travel to next wrong!";
+        }
+        if (game.checked){
+          answer8.innerHTML="You got my favorite video game right!";
+        }
+        else {
+          answer8.innerHTML="You got my favorite video game wrong!";
         }
       }
     </script>
